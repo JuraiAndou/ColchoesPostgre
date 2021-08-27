@@ -16,7 +16,7 @@ class ClienteDAO(object):
         try: 
             connection = psycopg2.connect(user=self._usr, password=self._psw, port=self._port, database=self._db)
             cursor = connection.cursor()
-            cursor.execute("SELECT cpf, nome, endereco, email FROM usuario")
+            cursor.execute("SELECT cpf, nome, endereco, email FROM cliente")
             registros = cursor.fetchall()
             for r in registros:
                 p = Cliente()
