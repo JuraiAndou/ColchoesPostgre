@@ -5,7 +5,7 @@
 -- Dumped from database version 13.3
 -- Dumped by pg_dump version 13.3
 
--- Started on 2021-08-28 12:31:59
+-- Started on 2021-08-28 18:51:06
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
@@ -19,7 +19,7 @@ SET client_min_messages = warning;
 SET row_security = off;
 
 --
--- TOC entry 3045 (class 0 OID 17074)
+-- TOC entry 3045 (class 0 OID 16834)
 -- Dependencies: 200
 -- Data for Name: cliente; Type: TABLE DATA; Schema: public; Owner: postgres
 --
@@ -37,7 +37,7 @@ INSERT INTO public.cliente VALUES (91236631236, 'Diana Silva', 'diaaana@gmail.co
 
 
 --
--- TOC entry 3047 (class 0 OID 17083)
+-- TOC entry 3047 (class 0 OID 16843)
 -- Dependencies: 202
 -- Data for Name: filiais; Type: TABLE DATA; Schema: public; Owner: postgres
 --
@@ -49,7 +49,7 @@ INSERT INTO public.filiais VALUES (13, '090 Garrison Road', 'filial4@gmail.com')
 
 
 --
--- TOC entry 3049 (class 0 OID 17095)
+-- TOC entry 3049 (class 0 OID 16855)
 -- Dependencies: 204
 -- Data for Name: fornecedor; Type: TABLE DATA; Schema: public; Owner: postgres
 --
@@ -60,7 +60,7 @@ INSERT INTO public.fornecedor VALUES (3, 85, 676698888, 'simmons@gmail.com', '74
 
 
 --
--- TOC entry 3051 (class 0 OID 17107)
+-- TOC entry 3051 (class 0 OID 16867)
 -- Dependencies: 206
 -- Data for Name: produto; Type: TABLE DATA; Schema: public; Owner: postgres
 --
@@ -75,7 +75,7 @@ INSERT INTO public.produto VALUES (7, 'Chicago', 'Simmons', 'Mola', 3, '1,93 x 2
 
 
 --
--- TOC entry 3046 (class 0 OID 17080)
+-- TOC entry 3046 (class 0 OID 16840)
 -- Dependencies: 201
 -- Data for Name: estoque; Type: TABLE DATA; Schema: public; Owner: postgres
 --
@@ -93,7 +93,7 @@ INSERT INTO public.estoque VALUES (13, 2, 29);
 
 
 --
--- TOC entry 3048 (class 0 OID 17089)
+-- TOC entry 3048 (class 0 OID 16849)
 -- Dependencies: 203
 -- Data for Name: fornece; Type: TABLE DATA; Schema: public; Owner: postgres
 --
@@ -108,7 +108,7 @@ INSERT INTO public.fornece VALUES (13, 3, 22, '1/07/21');
 
 
 --
--- TOC entry 3050 (class 0 OID 17101)
+-- TOC entry 3050 (class 0 OID 16861)
 -- Dependencies: 205
 -- Data for Name: funcionario; Type: TABLE DATA; Schema: public; Owner: postgres
 --
@@ -123,7 +123,7 @@ INSERT INTO public.funcionario VALUES (12688678906, 'Caio Barreros', 'Marketing'
 
 
 --
--- TOC entry 3052 (class 0 OID 17113)
+-- TOC entry 3052 (class 0 OID 16873)
 -- Dependencies: 207
 -- Data for Name: venda; Type: TABLE DATA; Schema: public; Owner: postgres
 --
@@ -141,7 +141,7 @@ INSERT INTO public.venda VALUES (10, 12, 11231231236, 66429988906, '25/08/21');
 
 
 --
--- TOC entry 3053 (class 0 OID 17119)
+-- TOC entry 3053 (class 0 OID 16879)
 -- Dependencies: 208
 -- Data for Name: venda_produto; Type: TABLE DATA; Schema: public; Owner: postgres
 --
@@ -158,7 +158,7 @@ INSERT INTO public.venda_produto VALUES (9, 6, 2);
 INSERT INTO public.venda_produto VALUES (10, 5, 1);
 
 
--- Completed on 2021-08-28 12:32:05
+-- Completed on 2021-08-28 18:51:06
 
 --
 -- PostgreSQL database dump complete
