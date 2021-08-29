@@ -52,3 +52,19 @@ class FilialDAO(object):
                 cursor.close()
                 connection.close()
         return resultados
+    
+    def atualizar_estoque(self, nome_filial, nova_quantidade):
+        sucesso = False
+        try:
+            connection = psycopg2.connect(user=self._usr, password=self._psw, port=self._port, database=self._db)
+            cursor = connection.cursor()
+            cursor.execute("UPDATE estoque SET quantidade = " + nova_quantidade + " WHERE produto_id IN ( SELECT produto_id FROM estoque AS e, filiais AS f WHERE f.id = e.filial_id AND f.nome = \'" + nome_filial + "\')")
+            connection.commit()
+            sucesso = (cursor.rowcount == 1)
+        except (Exception, psycopg2.Error) as error:
+            traceback.print_exc()
+        finally:
+            if connection:
+                cursor.close()
+                connection.close()
+        return sucesso
