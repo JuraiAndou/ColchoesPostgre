@@ -10,7 +10,7 @@ class Produto_Estoque(object):
     
     @property
     def quantidade(self):
-        return self._nome
+        return self._quantidade
 
     @quantidade.setter
     def quantidade(self, quantidade):

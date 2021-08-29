@@ -14,7 +14,7 @@ def main():
     listar_todos_clientes()
     listar_todas_filiais()
     listar_todos_produtos()
-    listar_estoque("Loja4")
+    listar_estoque("Loja1")
     listar_funcionarios()
     mudar_valor("Boston", 1420)
 
@@ -48,8 +48,8 @@ def listar_estoque(nome_filial):#lista todos os produtos cadastrados
     filialDAO = FilialDAO(pg_user, pg_password, pg_port, pg_database)
     estoque = filialDAO.lista_estoque(nome_filial)
     for e in estoque:
-        print("*** Nome:" + e.nome + " - Quantidade:" + e.quantidade + " ***")
-    print("*** " + str(len(estoque)) + " produtos diferentes em estoque ***")
+        print("*** Nome:" + e.nome + " - Quantidade:" + str(e.quantidade) + " ***")
+    print("*** " + str(len(estoque)) + " produtos diferentes em estoque em " + nome_filial + " ***")
 
 def listar_todos_produtos():#lista todos os produtos cadastrados
     produtoDAO = ProdutoDAO(pg_user, pg_password, pg_port, pg_database)
