@@ -23,6 +23,8 @@ def main():
     #remover_produto("Phoenix")
     #adicionar_cliente("05304506818", "Francisco Junior Souza", "juninreidelas@gmail.com", "631-1 Tapera")
     #remover_cliente("Francisco Junior Souza")
+    #adicionar_funcionario("58648726818", 'Cleison Pires Leite', 'Vendedor', '1502')
+    #remover_funcionario("Cleison Pires Leite")
     pass
 
 #Funções de DELETE
@@ -42,6 +44,14 @@ def remover_cliente(nome):
     else:
         print("*** Não foi possivel remover o cliente:" + nome + " ***")
 
+def remover_funcionario(nome):
+    funcionarioDAO = FuncionarioDAO(pg_user, pg_password, pg_port, pg_database)
+    sucesso = funcionarioDAO.remover(nome)
+    if sucesso:
+        print("*** Funcionário:" + nome + " removido com sucesso ***")
+    else:
+        print("*** Não foi possivel remover o funcionário:" + nome + " ***")
+
 #Funções de INSERT
 def adicionar_produto(nome, marca, descricao, fornecedor, medida, valor):
     produtoDAO = ProdutoDAO(pg_user, pg_password, pg_port, pg_database)
@@ -58,6 +68,14 @@ def adicionar_cliente(cpf, nome, email, endereco):
         print("*** " + nome + " adicionado como cliente com sucesso ***")
     else:
         print("*** Não foi possivel inserir" + nome + " como cliente ***")
+
+def adicionar_funcionario(cpf, nome, cargo, salario):
+    funcionarioDAO = FuncionarioDAO(pg_user, pg_password, pg_port, pg_database)
+    sucesso = funcionarioDAO.inserir(cpf, nome, cargo, salario)
+    if sucesso:
+        print("*** " + nome + " adicionado como funcionário com sucesso ***")
+    else:
+        print("*** Não foi possivel inserir" + nome + " como funcionário ***")
 
 #Funções UPDATE
 def mudar_valor(nome_produto, novo_valor):
