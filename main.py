@@ -28,6 +28,13 @@ def mudar_valor(nome_produto, novo_valor):
     else:
         print("*** Não foi possivel atualizar o preço de " + nome_produto + " ***")
 
+def mudar_estoque(nome_filial, nova_quantidade):
+    produtoDAO = ProdutoDAO(pg_user, pg_password, pg_port, pg_database)
+    sucesso = produtoDAO.atualizar_valor(nome_filial, nova_quantidade)
+    if sucesso:
+        print("*** Quantidade atualizada com sucesso ***")
+    else:
+        print("*** Não foi possivel atualizar a quantidade de " + nome_filial + " ***")
 
 #Funções de Select
 def listar_funcionarios():
