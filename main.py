@@ -1,7 +1,7 @@
-from filial import Filial
 from clienteDAO import ClienteDAO
 from filialDAO import FilialDAO
 from produtoDAO import ProdutoDAO
+from funcionarioDAO import FuncionarioDAO
 
 #variáveis para conexão com o banco de dados
 pg_user = "postgres" #usuário do postgre
@@ -14,6 +14,19 @@ def main():
     menu_listar_todas_filiais()
     menu_listar_todos_produtos()
     menu_listar_estoque("Loja4")
+    menu_listar_funcionarios()
+
+
+#Funções update
+
+
+#Funções de Select
+def menu_listar_funcionarios():
+    funcionarioDAO = FuncionarioDAO(pg_user, pg_password, pg_port, pg_database)
+    funcionarios = funcionarioDAO.lista_todas()
+    for f in funcionarios:
+        print("*** Nome:"+ f.nome + " CPF:" + str(f.cpf) + " - Cargo:" + f.cargo + " - Salário:R$" + str(f.salario) + " ***")
+    print("*** " + str(len(funcionarios)) + " funcionarios cadastradas")
 
 def menu_listar_estoque(nome_filial):#lista todos os produtos cadastrados
     filialDAO = FilialDAO(pg_user, pg_password, pg_port, pg_database)
