@@ -2,10 +2,10 @@
 -- PostgreSQL database dump
 --
 
--- Dumped from database version 13.3
--- Dumped by pg_dump version 13.3
+-- Dumped from database version 13.4
+-- Dumped by pg_dump version 13.4
 
--- Started on 2021-08-29 00:25:55
+-- Started on 2021-08-29 11:05:28
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
@@ -19,7 +19,7 @@ SET client_min_messages = warning;
 SET row_security = off;
 
 --
--- TOC entry 3045 (class 0 OID 17088)
+-- TOC entry 3047 (class 0 OID 17400)
 -- Dependencies: 200
 -- Data for Name: cliente; Type: TABLE DATA; Schema: public; Owner: postgres
 --
@@ -37,7 +37,7 @@ INSERT INTO public.cliente VALUES (91236631236, 'Diana Silva', 'diaaana@gmail.co
 
 
 --
--- TOC entry 3047 (class 0 OID 17097)
+-- TOC entry 3049 (class 0 OID 17409)
 -- Dependencies: 202
 -- Data for Name: filiais; Type: TABLE DATA; Schema: public; Owner: postgres
 --
@@ -49,7 +49,7 @@ INSERT INTO public.filiais VALUES (13, '090 Garrison Road', 'filial4@gmail.com',
 
 
 --
--- TOC entry 3049 (class 0 OID 17109)
+-- TOC entry 3051 (class 0 OID 17421)
 -- Dependencies: 204
 -- Data for Name: fornecedor; Type: TABLE DATA; Schema: public; Owner: postgres
 --
@@ -60,23 +60,22 @@ INSERT INTO public.fornecedor VALUES (3, 85, 676698888, 'simmons@gmail.com', '74
 
 
 --
--- TOC entry 3051 (class 0 OID 17121)
+-- TOC entry 3053 (class 0 OID 17433)
 -- Dependencies: 206
 -- Data for Name: produto; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-INSERT INTO public.produto VALUES (1, 'Boston', 'Ortobom', 'Mola', 1, '1,38 x 1,88 m', 1000);
-INSERT INTO public.produto VALUES (2, 'New York', 'Ortobom', 'Espuma', 1, '1,38 x 1,88 m', 2000);
-INSERT INTO public.produto VALUES (3, 'Orleans', 'Ortobom', 'Espuma', 1, '1,93 x 2,03 m', 3000);
-INSERT INTO public.produto VALUES (4, 'Miami', 'Herval', 'Mola', 2, '1,58 x 1,98 m', 2500);
-INSERT INTO public.produto VALUES (5, 'San Diego', 'Herval', 'Espuma', 2, '1,38 x 1,88 m', 1400);
-INSERT INTO public.produto VALUES (6, 'Orlando', 'Simmons', 'Espuma', 3, '1,93 x 2,03 m', 4000);
-INSERT INTO public.produto VALUES (7, 'Chicago', 'Simmons', 'Mola', 3, '1,93 x 2,03 m', 5000);
-
+INSERT INTO public.produto OVERRIDING SYSTEM VALUE VALUES (1, 'Boston', 'Ortobom', 'Mola', 1, '1,38 x 1,88 m', 1000);
+INSERT INTO public.produto OVERRIDING SYSTEM VALUE VALUES (2, 'New York', 'Ortobom', 'Espuma', 1, '1,38 x 1,88 m', 2000);
+INSERT INTO public.produto OVERRIDING SYSTEM VALUE VALUES (3, 'Orleans', 'Ortobom', 'Espuma', 1, '1,93 x 2,03 m', 3000);
+INSERT INTO public.produto OVERRIDING SYSTEM VALUE VALUES (4, 'Miami', 'Herval', 'Mola', 2, '1,58 x 1,98 m', 2500);
+INSERT INTO public.produto OVERRIDING SYSTEM VALUE VALUES (5, 'San Diego', 'Herval', 'Espuma', 2, '1,38 x 1,88 m', 1400);
+INSERT INTO public.produto OVERRIDING SYSTEM VALUE VALUES (6, 'Orlando', 'Simmons', 'Espuma', 3, '1,93 x 2,03 m', 4000);
+INSERT INTO public.produto OVERRIDING SYSTEM VALUE VALUES (7, 'Chicago', 'Simmons', 'Mola', 3, '1,93 x 2,03 m', 5000);
 
 
 --
--- TOC entry 3046 (class 0 OID 17094)
+-- TOC entry 3048 (class 0 OID 17406)
 -- Dependencies: 201
 -- Data for Name: estoque; Type: TABLE DATA; Schema: public; Owner: postgres
 --
@@ -94,7 +93,7 @@ INSERT INTO public.estoque VALUES (13, 2, 29);
 
 
 --
--- TOC entry 3048 (class 0 OID 17103)
+-- TOC entry 3050 (class 0 OID 17415)
 -- Dependencies: 203
 -- Data for Name: fornece; Type: TABLE DATA; Schema: public; Owner: postgres
 --
@@ -109,7 +108,7 @@ INSERT INTO public.fornece VALUES (13, 3, 22, '1/07/21');
 
 
 --
--- TOC entry 3050 (class 0 OID 17115)
+-- TOC entry 3052 (class 0 OID 17427)
 -- Dependencies: 205
 -- Data for Name: funcionario; Type: TABLE DATA; Schema: public; Owner: postgres
 --
@@ -124,7 +123,7 @@ INSERT INTO public.funcionario VALUES (12688678906, 'Caio Barreros', 'Marketing'
 
 
 --
--- TOC entry 3052 (class 0 OID 17127)
+-- TOC entry 3054 (class 0 OID 17439)
 -- Dependencies: 207
 -- Data for Name: venda; Type: TABLE DATA; Schema: public; Owner: postgres
 --
@@ -142,7 +141,7 @@ INSERT INTO public.venda VALUES (10, 12, 11231231236, 66429988906, '25/08/21');
 
 
 --
--- TOC entry 3053 (class 0 OID 17133)
+-- TOC entry 3055 (class 0 OID 17445)
 -- Dependencies: 208
 -- Data for Name: venda_produto; Type: TABLE DATA; Schema: public; Owner: postgres
 --
@@ -159,7 +158,16 @@ INSERT INTO public.venda_produto VALUES (3, 2, 4);
 INSERT INTO public.venda_produto VALUES (2, 2, 1);
 
 
--- Completed on 2021-08-29 00:25:55
+--
+-- TOC entry 3062 (class 0 OID 0)
+-- Dependencies: 209
+-- Name: produto_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('public.produto_id_seq', 8, true);
+
+
+-- Completed on 2021-08-29 11:05:29
 
 --
 -- PostgreSQL database dump complete
