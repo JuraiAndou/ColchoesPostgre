@@ -20,7 +20,9 @@ def main():
     #mudar_valor("Boston", 1420)
     #mudar_estoque("Loja1", 25, "Boston")
     #adicionar_produto("Phoenix", "Heval", "Mola", 2, "1,93 x 2,03 m", 3500)
-    remover_produto("Phoenix")
+    #remover_produto("Phoenix")
+    #adicionar_cliente("05304506818", "Francisco Junior Souza", "juninreidelas@gmail.com", "631-1 Tapera")
+    #remover_cliente("Francisco Junior Souza")
     pass
 
 #Funções de DELETE
@@ -32,14 +34,30 @@ def remover_produto(nome):
     else:
         print("*** Não foi possivel remover" + nome + " ***")
 
+def remover_cliente(nome):
+    clienteDAO = ClienteDAO(pg_user, pg_password, pg_port, pg_database)
+    sucesso = clienteDAO.remover(nome)
+    if sucesso:
+        print("*** Cliente:" + nome + " removido com sucesso ***")
+    else:
+        print("*** Não foi possivel remover o cliente:" + nome + " ***")
+
 #Funções de INSERT
 def adicionar_produto(nome, marca, descricao, fornecedor, medida, valor):
     produtoDAO = ProdutoDAO(pg_user, pg_password, pg_port, pg_database)
     sucesso = produtoDAO.inserir(nome, marca, descricao, fornecedor, medida, valor)
     if sucesso:
-        print("*** " + nome + " inserido com sucesso ***")
+        print("*** " + nome + " adicionado como produto com sucesso ***")
     else:
-        print("*** Não foi possivel inserir" + nome + " ***")
+        print("*** Não foi possivel inserir" + nome + " como produto ***")
+
+def adicionar_cliente(cpf, nome, email, endereco):
+    clienteDAO = ClienteDAO(pg_user, pg_password, pg_port, pg_database)
+    sucesso = clienteDAO.inserir(cpf, nome, email, endereco)
+    if sucesso:
+        print("*** " + nome + " adicionado como cliente com sucesso ***")
+    else:
+        print("*** Não foi possivel inserir" + nome + " como cliente ***")
 
 #Funções UPDATE
 def mudar_valor(nome_produto, novo_valor):

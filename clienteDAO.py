@@ -32,3 +32,35 @@ class ClienteDAO(object):
                 cursor.close()
                 connection.close()
         return resultados
+    
+    def inserir(self, cpf, nome, email, endereco):
+        sucesso = False
+        try:
+            connection = psycopg2.connect(user=self._usr, password=self._psw, port=self._port, database=self._db)
+            cursor = connection.cursor()
+            cursor.execute("INSERT INTO cliente VALUES (" + cpf + ", \'" + nome + "\', \'" + email + "\', \'" + endereco + "\')")
+            connection.commit()
+            sucesso = (cursor.rowcount == 1)
+        except (Exception, psycopg2.Error) as error:
+            traceback.print_exc()
+        finally:
+            if connection:
+                cursor.close()
+                connection.close()
+        return sucesso
+
+    def remover(self, nome):
+        sucesso = False
+        try:
+            connection = psycopg2.connect(user=self._usr, password=self._psw, port=self._port, database=self._db)
+            cursor = connection.cursor()
+            cursor.execute("DELETE FROM cliente WHERE cliente.nome = \'" + nome + "\'")
+            connection.commit()
+            sucesso = (cursor.rowcount == 1)
+        except (Exception, psycopg2.Error) as error:
+            traceback.print_exc()
+        finally:
+            if connection:
+                cursor.close()
+                connection.close()
+        return sucesso
