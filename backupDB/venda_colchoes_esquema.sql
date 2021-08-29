@@ -2,9 +2,10 @@
 -- PostgreSQL database dump
 --
 
--- Dumped from database version 13.3
--- Dumped by pg_dump version 13.3
+-- Dumped from database version 13.4
+-- Dumped by pg_dump version 13.4
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 -- Started on 2021-08-29 00:04:39
@@ -14,6 +15,9 @@
 =======
 -- Started on 2021-08-28 23:39:24
 >>>>>>> parent of 61d621e (Revert "att")
+=======
+-- Started on 2021-08-28 22:40:01
+>>>>>>> parent of 65b7639 (mhv)
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
@@ -33,6 +37,7 @@ SET default_table_access_method = heap;
 --
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 -- TOC entry 200 (class 1259 OID 17088)
 =======
 -- TOC entry 200 (class 1259 OID 16956)
@@ -40,6 +45,9 @@ SET default_table_access_method = heap;
 =======
 -- TOC entry 200 (class 1259 OID 16956)
 >>>>>>> parent of 61d621e (Revert "att")
+=======
+-- TOC entry 200 (class 1259 OID 16692)
+>>>>>>> parent of 65b7639 (mhv)
 -- Name: cliente; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -56,6 +64,7 @@ ALTER TABLE public.cliente OWNER TO postgres;
 --
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 -- TOC entry 201 (class 1259 OID 17094)
 =======
 -- TOC entry 201 (class 1259 OID 16962)
@@ -63,6 +72,9 @@ ALTER TABLE public.cliente OWNER TO postgres;
 =======
 -- TOC entry 201 (class 1259 OID 16962)
 >>>>>>> parent of 61d621e (Revert "att")
+=======
+-- TOC entry 201 (class 1259 OID 16698)
+>>>>>>> parent of 65b7639 (mhv)
 -- Name: estoque; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -78,6 +90,7 @@ ALTER TABLE public.estoque OWNER TO postgres;
 --
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 -- TOC entry 202 (class 1259 OID 17097)
 =======
 -- TOC entry 202 (class 1259 OID 16965)
@@ -85,6 +98,9 @@ ALTER TABLE public.estoque OWNER TO postgres;
 =======
 -- TOC entry 202 (class 1259 OID 16965)
 >>>>>>> parent of 61d621e (Revert "att")
+=======
+-- TOC entry 202 (class 1259 OID 16701)
+>>>>>>> parent of 65b7639 (mhv)
 -- Name: filiais; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -101,6 +117,7 @@ ALTER TABLE public.filiais OWNER TO postgres;
 --
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 -- TOC entry 203 (class 1259 OID 17103)
 =======
 -- TOC entry 203 (class 1259 OID 16971)
@@ -108,6 +125,9 @@ ALTER TABLE public.filiais OWNER TO postgres;
 =======
 -- TOC entry 203 (class 1259 OID 16971)
 >>>>>>> parent of 61d621e (Revert "att")
+=======
+-- TOC entry 203 (class 1259 OID 16707)
+>>>>>>> parent of 65b7639 (mhv)
 -- Name: fornece; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -124,6 +144,7 @@ ALTER TABLE public.fornece OWNER TO postgres;
 --
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 -- TOC entry 204 (class 1259 OID 17109)
 =======
 -- TOC entry 204 (class 1259 OID 16977)
@@ -131,6 +152,9 @@ ALTER TABLE public.fornece OWNER TO postgres;
 =======
 -- TOC entry 204 (class 1259 OID 16977)
 >>>>>>> parent of 61d621e (Revert "att")
+=======
+-- TOC entry 204 (class 1259 OID 16713)
+>>>>>>> parent of 65b7639 (mhv)
 -- Name: fornecedor; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -148,6 +172,7 @@ ALTER TABLE public.fornecedor OWNER TO postgres;
 --
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 -- TOC entry 205 (class 1259 OID 17115)
 =======
 -- TOC entry 205 (class 1259 OID 16983)
@@ -155,6 +180,9 @@ ALTER TABLE public.fornecedor OWNER TO postgres;
 =======
 -- TOC entry 205 (class 1259 OID 16983)
 >>>>>>> parent of 61d621e (Revert "att")
+=======
+-- TOC entry 205 (class 1259 OID 16719)
+>>>>>>> parent of 65b7639 (mhv)
 -- Name: funcionario; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -171,6 +199,7 @@ ALTER TABLE public.funcionario OWNER TO postgres;
 --
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 -- TOC entry 206 (class 1259 OID 17121)
 =======
 -- TOC entry 206 (class 1259 OID 16989)
@@ -178,6 +207,9 @@ ALTER TABLE public.funcionario OWNER TO postgres;
 =======
 -- TOC entry 206 (class 1259 OID 16989)
 >>>>>>> parent of 61d621e (Revert "att")
+=======
+-- TOC entry 206 (class 1259 OID 16725)
+>>>>>>> parent of 65b7639 (mhv)
 -- Name: produto; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -197,6 +229,7 @@ ALTER TABLE public.produto OWNER TO postgres;
 --
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 -- TOC entry 207 (class 1259 OID 17127)
 =======
 -- TOC entry 207 (class 1259 OID 16995)
@@ -204,6 +237,9 @@ ALTER TABLE public.produto OWNER TO postgres;
 =======
 -- TOC entry 207 (class 1259 OID 16995)
 >>>>>>> parent of 61d621e (Revert "att")
+=======
+-- TOC entry 207 (class 1259 OID 16731)
+>>>>>>> parent of 65b7639 (mhv)
 -- Name: venda; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -221,6 +257,7 @@ ALTER TABLE public.venda OWNER TO postgres;
 --
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 -- TOC entry 208 (class 1259 OID 17133)
 =======
 -- TOC entry 208 (class 1259 OID 17001)
@@ -228,6 +265,9 @@ ALTER TABLE public.venda OWNER TO postgres;
 =======
 -- TOC entry 208 (class 1259 OID 17001)
 >>>>>>> parent of 61d621e (Revert "att")
+=======
+-- TOC entry 208 (class 1259 OID 16737)
+>>>>>>> parent of 65b7639 (mhv)
 -- Name: venda_produto; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -243,6 +283,7 @@ ALTER TABLE public.venda_produto OWNER TO postgres;
 --
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 -- TOC entry 2900 (class 2606 OID 17137)
 =======
 -- TOC entry 2900 (class 2606 OID 17005)
@@ -250,6 +291,9 @@ ALTER TABLE public.venda_produto OWNER TO postgres;
 =======
 -- TOC entry 2900 (class 2606 OID 17005)
 >>>>>>> parent of 61d621e (Revert "att")
+=======
+-- TOC entry 2900 (class 2606 OID 16741)
+>>>>>>> parent of 65b7639 (mhv)
 -- Name: produto Produto_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -260,6 +304,7 @@ ALTER TABLE ONLY public.produto
 --
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 -- TOC entry 2888 (class 2606 OID 17139)
 =======
 -- TOC entry 2888 (class 2606 OID 17007)
@@ -267,6 +312,9 @@ ALTER TABLE ONLY public.produto
 =======
 -- TOC entry 2888 (class 2606 OID 17007)
 >>>>>>> parent of 61d621e (Revert "att")
+=======
+-- TOC entry 2888 (class 2606 OID 16743)
+>>>>>>> parent of 65b7639 (mhv)
 -- Name: cliente cliente_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -277,6 +325,7 @@ ALTER TABLE ONLY public.cliente
 --
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 -- TOC entry 2890 (class 2606 OID 17141)
 =======
 -- TOC entry 2890 (class 2606 OID 17009)
@@ -284,6 +333,9 @@ ALTER TABLE ONLY public.cliente
 =======
 -- TOC entry 2890 (class 2606 OID 17009)
 >>>>>>> parent of 61d621e (Revert "att")
+=======
+-- TOC entry 2890 (class 2606 OID 16745)
+>>>>>>> parent of 65b7639 (mhv)
 -- Name: estoque estoque_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -294,6 +346,7 @@ ALTER TABLE ONLY public.estoque
 --
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 -- TOC entry 2892 (class 2606 OID 17143)
 =======
 -- TOC entry 2892 (class 2606 OID 17011)
@@ -301,6 +354,9 @@ ALTER TABLE ONLY public.estoque
 =======
 -- TOC entry 2892 (class 2606 OID 17011)
 >>>>>>> parent of 61d621e (Revert "att")
+=======
+-- TOC entry 2892 (class 2606 OID 16747)
+>>>>>>> parent of 65b7639 (mhv)
 -- Name: filiais filiais_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -311,6 +367,7 @@ ALTER TABLE ONLY public.filiais
 --
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 -- TOC entry 2894 (class 2606 OID 17145)
 =======
 -- TOC entry 2894 (class 2606 OID 17013)
@@ -318,6 +375,9 @@ ALTER TABLE ONLY public.filiais
 =======
 -- TOC entry 2894 (class 2606 OID 17013)
 >>>>>>> parent of 61d621e (Revert "att")
+=======
+-- TOC entry 2894 (class 2606 OID 16749)
+>>>>>>> parent of 65b7639 (mhv)
 -- Name: fornece fornece_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -328,6 +388,7 @@ ALTER TABLE ONLY public.fornece
 --
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 -- TOC entry 2896 (class 2606 OID 17147)
 =======
 -- TOC entry 2896 (class 2606 OID 17015)
@@ -335,6 +396,9 @@ ALTER TABLE ONLY public.fornece
 =======
 -- TOC entry 2896 (class 2606 OID 17015)
 >>>>>>> parent of 61d621e (Revert "att")
+=======
+-- TOC entry 2896 (class 2606 OID 16751)
+>>>>>>> parent of 65b7639 (mhv)
 -- Name: fornecedor fornecedor_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -345,6 +409,7 @@ ALTER TABLE ONLY public.fornecedor
 --
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 -- TOC entry 2898 (class 2606 OID 17149)
 =======
 -- TOC entry 2898 (class 2606 OID 17017)
@@ -352,6 +417,9 @@ ALTER TABLE ONLY public.fornecedor
 =======
 -- TOC entry 2898 (class 2606 OID 17017)
 >>>>>>> parent of 61d621e (Revert "att")
+=======
+-- TOC entry 2898 (class 2606 OID 16753)
+>>>>>>> parent of 65b7639 (mhv)
 -- Name: funcionario funcionario_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -362,6 +430,7 @@ ALTER TABLE ONLY public.funcionario
 --
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 -- TOC entry 2902 (class 2606 OID 17151)
 =======
 -- TOC entry 2902 (class 2606 OID 17019)
@@ -369,6 +438,9 @@ ALTER TABLE ONLY public.funcionario
 =======
 -- TOC entry 2902 (class 2606 OID 17019)
 >>>>>>> parent of 61d621e (Revert "att")
+=======
+-- TOC entry 2902 (class 2606 OID 16755)
+>>>>>>> parent of 65b7639 (mhv)
 -- Name: venda venda_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -379,6 +451,7 @@ ALTER TABLE ONLY public.venda
 --
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 -- TOC entry 2904 (class 2606 OID 17153)
 =======
 -- TOC entry 2904 (class 2606 OID 17021)
@@ -386,6 +459,9 @@ ALTER TABLE ONLY public.venda
 =======
 -- TOC entry 2904 (class 2606 OID 17021)
 >>>>>>> parent of 61d621e (Revert "att")
+=======
+-- TOC entry 2904 (class 2606 OID 16757)
+>>>>>>> parent of 65b7639 (mhv)
 -- Name: venda_produto venda_produto_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -396,6 +472,7 @@ ALTER TABLE ONLY public.venda_produto
 --
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 -- TOC entry 2905 (class 2606 OID 17154)
 =======
 -- TOC entry 2905 (class 2606 OID 17022)
@@ -403,6 +480,9 @@ ALTER TABLE ONLY public.venda_produto
 =======
 -- TOC entry 2905 (class 2606 OID 17022)
 >>>>>>> parent of 61d621e (Revert "att")
+=======
+-- TOC entry 2905 (class 2606 OID 16758)
+>>>>>>> parent of 65b7639 (mhv)
 -- Name: estoque estoque_filial_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -413,6 +493,7 @@ ALTER TABLE ONLY public.estoque
 --
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 -- TOC entry 2906 (class 2606 OID 17159)
 =======
 -- TOC entry 2906 (class 2606 OID 17027)
@@ -420,6 +501,9 @@ ALTER TABLE ONLY public.estoque
 =======
 -- TOC entry 2906 (class 2606 OID 17027)
 >>>>>>> parent of 61d621e (Revert "att")
+=======
+-- TOC entry 2906 (class 2606 OID 16763)
+>>>>>>> parent of 65b7639 (mhv)
 -- Name: estoque estoque_produto_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -430,6 +514,7 @@ ALTER TABLE ONLY public.estoque
 --
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 -- TOC entry 2907 (class 2606 OID 17164)
 =======
 -- TOC entry 2907 (class 2606 OID 17032)
@@ -437,6 +522,9 @@ ALTER TABLE ONLY public.estoque
 =======
 -- TOC entry 2907 (class 2606 OID 17032)
 >>>>>>> parent of 61d621e (Revert "att")
+=======
+-- TOC entry 2907 (class 2606 OID 16768)
+>>>>>>> parent of 65b7639 (mhv)
 -- Name: fornece fornece_filial_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -447,6 +535,7 @@ ALTER TABLE ONLY public.fornece
 --
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 -- TOC entry 2908 (class 2606 OID 17169)
 =======
 -- TOC entry 2908 (class 2606 OID 17037)
@@ -454,6 +543,9 @@ ALTER TABLE ONLY public.fornece
 =======
 -- TOC entry 2908 (class 2606 OID 17037)
 >>>>>>> parent of 61d621e (Revert "att")
+=======
+-- TOC entry 2908 (class 2606 OID 16773)
+>>>>>>> parent of 65b7639 (mhv)
 -- Name: fornece fornece_fornecedor_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -464,6 +556,7 @@ ALTER TABLE ONLY public.fornece
 --
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 -- TOC entry 2909 (class 2606 OID 17174)
 =======
 -- TOC entry 2909 (class 2606 OID 17042)
@@ -471,6 +564,9 @@ ALTER TABLE ONLY public.fornece
 =======
 -- TOC entry 2909 (class 2606 OID 17042)
 >>>>>>> parent of 61d621e (Revert "att")
+=======
+-- TOC entry 2909 (class 2606 OID 16778)
+>>>>>>> parent of 65b7639 (mhv)
 -- Name: produto produto_fornecedor_id; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -481,6 +577,7 @@ ALTER TABLE ONLY public.produto
 --
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 -- TOC entry 2910 (class 2606 OID 17179)
 =======
 -- TOC entry 2910 (class 2606 OID 17047)
@@ -488,6 +585,9 @@ ALTER TABLE ONLY public.produto
 =======
 -- TOC entry 2910 (class 2606 OID 17047)
 >>>>>>> parent of 61d621e (Revert "att")
+=======
+-- TOC entry 2910 (class 2606 OID 16783)
+>>>>>>> parent of 65b7639 (mhv)
 -- Name: venda venda_cliente_cpf_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -498,6 +598,7 @@ ALTER TABLE ONLY public.venda
 --
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 -- TOC entry 2911 (class 2606 OID 17184)
 =======
 -- TOC entry 2911 (class 2606 OID 17052)
@@ -505,6 +606,9 @@ ALTER TABLE ONLY public.venda
 =======
 -- TOC entry 2911 (class 2606 OID 17052)
 >>>>>>> parent of 61d621e (Revert "att")
+=======
+-- TOC entry 2911 (class 2606 OID 16788)
+>>>>>>> parent of 65b7639 (mhv)
 -- Name: venda venda_filial_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -515,6 +619,7 @@ ALTER TABLE ONLY public.venda
 --
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 -- TOC entry 2912 (class 2606 OID 17189)
 =======
 -- TOC entry 2912 (class 2606 OID 17057)
@@ -522,6 +627,9 @@ ALTER TABLE ONLY public.venda
 =======
 -- TOC entry 2912 (class 2606 OID 17057)
 >>>>>>> parent of 61d621e (Revert "att")
+=======
+-- TOC entry 2912 (class 2606 OID 16793)
+>>>>>>> parent of 65b7639 (mhv)
 -- Name: venda venda_funcionario_cpf_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -532,6 +640,7 @@ ALTER TABLE ONLY public.venda
 --
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 -- TOC entry 2914 (class 2606 OID 17204)
 =======
 -- TOC entry 2914 (class 2606 OID 17072)
@@ -539,10 +648,14 @@ ALTER TABLE ONLY public.venda
 =======
 -- TOC entry 2914 (class 2606 OID 17072)
 >>>>>>> parent of 61d621e (Revert "att")
+=======
+-- TOC entry 2913 (class 2606 OID 16798)
+>>>>>>> parent of 65b7639 (mhv)
 -- Name: venda_produto venda_produto_produto_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
 ALTER TABLE ONLY public.venda_produto
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     ADD CONSTRAINT venda_produto_produto_id_fkey FOREIGN KEY (produto_id) REFERENCES public.produto(id) ON UPDATE CASCADE ON DELETE CASCADE NOT VALID;
@@ -564,6 +677,13 @@ ALTER TABLE ONLY public.venda_produto
 --
 -- TOC entry 2913 (class 2606 OID 17067)
 >>>>>>> parent of 61d621e (Revert "att")
+=======
+    ADD CONSTRAINT venda_produto_produto_id_fkey FOREIGN KEY (produto_id) REFERENCES public.produto(id) ON UPDATE CASCADE ON DELETE SET NULL;
+
+
+--
+-- TOC entry 2914 (class 2606 OID 16803)
+>>>>>>> parent of 65b7639 (mhv)
 -- Name: venda_produto venda_produto_venda_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -573,6 +693,7 @@ ALTER TABLE ONLY public.venda_produto
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 -- Completed on 2021-08-29 00:04:40
 =======
 -- Completed on 2021-08-28 23:39:24
@@ -580,6 +701,9 @@ ALTER TABLE ONLY public.venda_produto
 =======
 -- Completed on 2021-08-28 23:39:24
 >>>>>>> parent of 61d621e (Revert "att")
+=======
+-- Completed on 2021-08-28 22:40:02
+>>>>>>> parent of 65b7639 (mhv)
 
 --
 -- PostgreSQL database dump complete
