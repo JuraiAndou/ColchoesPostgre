@@ -2,10 +2,10 @@
 -- PostgreSQL database dump
 --
 
--- Dumped from database version 13.4
--- Dumped by pg_dump version 13.4
+-- Dumped from database version 13.3
+-- Dumped by pg_dump version 13.3
 
--- Started on 2021-08-28 22:40:01
+-- Started on 2021-08-29 00:01:16
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
@@ -23,7 +23,7 @@ SET default_tablespace = '';
 SET default_table_access_method = heap;
 
 --
--- TOC entry 200 (class 1259 OID 16692)
+-- TOC entry 200 (class 1259 OID 17088)
 -- Name: cliente; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -38,7 +38,7 @@ CREATE TABLE public.cliente (
 ALTER TABLE public.cliente OWNER TO postgres;
 
 --
--- TOC entry 201 (class 1259 OID 16698)
+-- TOC entry 201 (class 1259 OID 17094)
 -- Name: estoque; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -52,7 +52,7 @@ CREATE TABLE public.estoque (
 ALTER TABLE public.estoque OWNER TO postgres;
 
 --
--- TOC entry 202 (class 1259 OID 16701)
+-- TOC entry 202 (class 1259 OID 17097)
 -- Name: filiais; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -67,7 +67,7 @@ CREATE TABLE public.filiais (
 ALTER TABLE public.filiais OWNER TO postgres;
 
 --
--- TOC entry 203 (class 1259 OID 16707)
+-- TOC entry 203 (class 1259 OID 17103)
 -- Name: fornece; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -82,7 +82,7 @@ CREATE TABLE public.fornece (
 ALTER TABLE public.fornece OWNER TO postgres;
 
 --
--- TOC entry 204 (class 1259 OID 16713)
+-- TOC entry 204 (class 1259 OID 17109)
 -- Name: fornecedor; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -98,7 +98,7 @@ CREATE TABLE public.fornecedor (
 ALTER TABLE public.fornecedor OWNER TO postgres;
 
 --
--- TOC entry 205 (class 1259 OID 16719)
+-- TOC entry 205 (class 1259 OID 17115)
 -- Name: funcionario; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -113,7 +113,7 @@ CREATE TABLE public.funcionario (
 ALTER TABLE public.funcionario OWNER TO postgres;
 
 --
--- TOC entry 206 (class 1259 OID 16725)
+-- TOC entry 206 (class 1259 OID 17121)
 -- Name: produto; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -131,7 +131,7 @@ CREATE TABLE public.produto (
 ALTER TABLE public.produto OWNER TO postgres;
 
 --
--- TOC entry 207 (class 1259 OID 16731)
+-- TOC entry 207 (class 1259 OID 17127)
 -- Name: venda; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -147,7 +147,7 @@ CREATE TABLE public.venda (
 ALTER TABLE public.venda OWNER TO postgres;
 
 --
--- TOC entry 208 (class 1259 OID 16737)
+-- TOC entry 208 (class 1259 OID 17133)
 -- Name: venda_produto; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -161,7 +161,7 @@ CREATE TABLE public.venda_produto (
 ALTER TABLE public.venda_produto OWNER TO postgres;
 
 --
--- TOC entry 2900 (class 2606 OID 16741)
+-- TOC entry 2900 (class 2606 OID 17137)
 -- Name: produto Produto_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -170,7 +170,7 @@ ALTER TABLE ONLY public.produto
 
 
 --
--- TOC entry 2888 (class 2606 OID 16743)
+-- TOC entry 2888 (class 2606 OID 17139)
 -- Name: cliente cliente_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -179,7 +179,7 @@ ALTER TABLE ONLY public.cliente
 
 
 --
--- TOC entry 2890 (class 2606 OID 16745)
+-- TOC entry 2890 (class 2606 OID 17141)
 -- Name: estoque estoque_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -188,7 +188,7 @@ ALTER TABLE ONLY public.estoque
 
 
 --
--- TOC entry 2892 (class 2606 OID 16747)
+-- TOC entry 2892 (class 2606 OID 17143)
 -- Name: filiais filiais_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -197,7 +197,7 @@ ALTER TABLE ONLY public.filiais
 
 
 --
--- TOC entry 2894 (class 2606 OID 16749)
+-- TOC entry 2894 (class 2606 OID 17145)
 -- Name: fornece fornece_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -206,7 +206,7 @@ ALTER TABLE ONLY public.fornece
 
 
 --
--- TOC entry 2896 (class 2606 OID 16751)
+-- TOC entry 2896 (class 2606 OID 17147)
 -- Name: fornecedor fornecedor_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -215,7 +215,7 @@ ALTER TABLE ONLY public.fornecedor
 
 
 --
--- TOC entry 2898 (class 2606 OID 16753)
+-- TOC entry 2898 (class 2606 OID 17149)
 -- Name: funcionario funcionario_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -224,7 +224,7 @@ ALTER TABLE ONLY public.funcionario
 
 
 --
--- TOC entry 2902 (class 2606 OID 16755)
+-- TOC entry 2902 (class 2606 OID 17151)
 -- Name: venda venda_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -233,7 +233,7 @@ ALTER TABLE ONLY public.venda
 
 
 --
--- TOC entry 2904 (class 2606 OID 16757)
+-- TOC entry 2904 (class 2606 OID 17153)
 -- Name: venda_produto venda_produto_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -242,7 +242,7 @@ ALTER TABLE ONLY public.venda_produto
 
 
 --
--- TOC entry 2905 (class 2606 OID 16758)
+-- TOC entry 2905 (class 2606 OID 17154)
 -- Name: estoque estoque_filial_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -251,7 +251,7 @@ ALTER TABLE ONLY public.estoque
 
 
 --
--- TOC entry 2906 (class 2606 OID 16763)
+-- TOC entry 2906 (class 2606 OID 17159)
 -- Name: estoque estoque_produto_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -260,7 +260,7 @@ ALTER TABLE ONLY public.estoque
 
 
 --
--- TOC entry 2907 (class 2606 OID 16768)
+-- TOC entry 2907 (class 2606 OID 17164)
 -- Name: fornece fornece_filial_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -269,7 +269,7 @@ ALTER TABLE ONLY public.fornece
 
 
 --
--- TOC entry 2908 (class 2606 OID 16773)
+-- TOC entry 2908 (class 2606 OID 17169)
 -- Name: fornece fornece_fornecedor_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -278,7 +278,7 @@ ALTER TABLE ONLY public.fornece
 
 
 --
--- TOC entry 2909 (class 2606 OID 16778)
+-- TOC entry 2909 (class 2606 OID 17174)
 -- Name: produto produto_fornecedor_id; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -287,7 +287,7 @@ ALTER TABLE ONLY public.produto
 
 
 --
--- TOC entry 2910 (class 2606 OID 16783)
+-- TOC entry 2910 (class 2606 OID 17179)
 -- Name: venda venda_cliente_cpf_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -296,7 +296,7 @@ ALTER TABLE ONLY public.venda
 
 
 --
--- TOC entry 2911 (class 2606 OID 16788)
+-- TOC entry 2911 (class 2606 OID 17184)
 -- Name: venda venda_filial_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -305,7 +305,7 @@ ALTER TABLE ONLY public.venda
 
 
 --
--- TOC entry 2912 (class 2606 OID 16793)
+-- TOC entry 2912 (class 2606 OID 17189)
 -- Name: venda venda_funcionario_cpf_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -314,16 +314,16 @@ ALTER TABLE ONLY public.venda
 
 
 --
--- TOC entry 2913 (class 2606 OID 16798)
+-- TOC entry 2914 (class 2606 OID 17204)
 -- Name: venda_produto venda_produto_produto_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
 ALTER TABLE ONLY public.venda_produto
-    ADD CONSTRAINT venda_produto_produto_id_fkey FOREIGN KEY (produto_id) REFERENCES public.produto(id) ON UPDATE CASCADE ON DELETE SET NULL;
+    ADD CONSTRAINT venda_produto_produto_id_fkey FOREIGN KEY (produto_id) REFERENCES public.produto(id) ON UPDATE CASCADE ON DELETE CASCADE NOT VALID;
 
 
 --
--- TOC entry 2914 (class 2606 OID 16803)
+-- TOC entry 2913 (class 2606 OID 17199)
 -- Name: venda_produto venda_produto_venda_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -331,7 +331,7 @@ ALTER TABLE ONLY public.venda_produto
     ADD CONSTRAINT venda_produto_venda_id_fkey FOREIGN KEY (venda_id) REFERENCES public.venda(id) ON UPDATE CASCADE ON DELETE SET NULL;
 
 
--- Completed on 2021-08-28 22:40:02
+-- Completed on 2021-08-29 00:01:16
 
 --
 -- PostgreSQL database dump complete
