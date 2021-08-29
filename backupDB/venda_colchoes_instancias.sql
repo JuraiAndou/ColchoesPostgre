@@ -5,7 +5,11 @@
 -- Dumped from database version 13.3
 -- Dumped by pg_dump version 13.3
 
+<<<<<<< HEAD
 -- Started on 2021-08-29 00:04:55
+=======
+-- Started on 2021-08-28 23:40:02
+>>>>>>> parent of 61d621e (Revert "att")
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
@@ -18,6 +22,7 @@ SET xmloption = content;
 SET client_min_messages = warning;
 SET row_security = off;
 
+<<<<<<< HEAD
 --
 -- TOC entry 3045 (class 0 OID 17088)
 -- Dependencies: 200
@@ -153,6 +158,9 @@ INSERT INTO public.venda_produto VALUES (10, 5, 1);
 
 
 -- Completed on 2021-08-29 00:04:55
+=======
+-- Completed on 2021-08-28 23:40:03
+>>>>>>> parent of 61d621e (Revert "att")
 
 --
 -- PostgreSQL database dump complete
