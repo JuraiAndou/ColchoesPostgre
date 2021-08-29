@@ -1,3 +1,4 @@
+from funcionario import Funcionario
 from produto import Produto
 from clienteDAO import ClienteDAO
 from filialDAO import FilialDAO
@@ -11,12 +12,163 @@ pg_password = "root" #senha do servidor
 pg_port="5432" #porta do servidor
 pg_database = "venda_colchoes" #nome do banco de dados
 
+class Menu():
+    def __init__(self):
+        pass
+
+    def start(self):
+        print("======================================")
+        print("------|Sistema Colchão Genérico|------")
+        print("======================================")
+        print("--------------------------------------")
+        print("[1]\tCadastro De Funcionários")
+        print("--------------------------------------")
+        print("[2]\tCadastro De Clientes")
+        print("--------------------------------------")
+        print("[3]\tCadastro De Produtos")
+        print("--------------------------------------")
+        print("[4]\tCadastro De Filiáis")
+        print("--------------------------------------")
+        print("[0]\tSair da Aplicação")
+        print("--------------------------------------")
+
+        cmd = int(input("Digite uma opção [0-3]: "))
+        if cmd == 0:
+            exit()
+        elif cmd == 1:
+            self.cadastro_funcionario()
+        elif cmd == 2:
+            self.cadastro_clientes()
+        elif cmd == 3:
+            pass
+        elif cmd == 4:
+            pass
+        else:
+            print("\n\n\n***\tComanado inválido\t***\n")
+            self.start()
+
+    #Cadastro de funcionário
+    def cadastro_funcionario(self):
+        print("======================================")
+        print("--------|Cadastro Funcionários|-------")
+        print("======================================")
+        print("--------------------------------------")
+        print("[1]\tLista de funcionários")
+        print("--------------------------------------")
+        print("[2]\tAdicionar Funcionários")
+        print("--------------------------------------")
+        print("[3]\tRemover Funcionários")
+        print("--------------------------------------")
+        print("[4]\tVoltar")
+        print("--------------------------------------")
+        print("[0]\tSair da Aplicação")
+        print("--------------------------------------")
+
+        cmd = int(input("Digite uma opção [0-4]: "))
+        if cmd == 0:
+            exit()
+        elif cmd == 1:
+            listar_todos_funcionarios()
+            input("Presione Enter para sair...")
+            exit()
+        elif cmd == 2:
+            self._adicionar_funcionario()
+            input("Presione Enter para sair...")
+            exit()
+        elif cmd == 3:
+            self._remover_funcionario()
+            input("Presione Enter para sair...")
+            exit()
+        elif cmd == 4:
+            self.start()
+        else:
+            print("\n\n\n***\tComanado inválido\t***\n")
+            self.cadastro_funcionario()
+    def _adicionar_funcionario(self):
+        print("======================================")
+        print("--------|Adicionar Funcionário|-------")
+        print("======================================")
+        print("--------------------------------------")
+        cpf = input("CPF do funcionário: ")
+        nome = input("Nome do funcionário: ")
+        cargo = input("Cargo do funcionário: ")
+        salario = int(input("Salario do funcionário: "))
+        adicionar_funcionario(cpf, nome, cargo, salario)
+    def _remover_funcionario(self):
+        print("======================================")
+        print("---------|Remover Funcionário|--------")
+        print("======================================")
+        print("--------------------------------------")
+        print("***\tLista de funcionários\t***")
+        listar_todos_funcionarios()
+        print("--------------------------------------")
+        nome = input("Nome do funcionário a ser deletado: ")
+        remover_funcionario(nome)
+    
+    #Cadastro de Clientes
+    def cadastro_clientes(self):
+        print("======================================")
+        print("---------|Cadastro de Clientes|-------")
+        print("======================================")
+        print("--------------------------------------")
+        print("[1]\tLista de Clientes")
+        print("--------------------------------------")
+        print("[2]\tAdicionar Cliente")
+        print("--------------------------------------")
+        print("[3]\tRemover Cliente")
+        print("--------------------------------------")
+        print("[4]\tVoltar")
+        print("--------------------------------------")
+        print("[0]\tSair da Aplicação")
+        print("--------------------------------------")
+
+        cmd = int(input("Digite uma opção [0-4]: "))
+        if cmd == 0:
+            exit()
+        elif cmd == 1:
+            listar_todos_clientes()
+            input("Presione Enter para sair...")
+            exit()
+        elif cmd == 2:
+            self._adicionar_cliente()
+            input("Presione Enter para sair...")
+            exit()
+        elif cmd == 3:
+            self._remover_cliente()
+            input("Presione Enter para sair...")
+            exit()
+        elif cmd == 4:
+            self.start()
+        else:
+            print("\n\n\n***\tComanado inválido\t***\n")
+            self.cadastro_funcionario()
+    def _adicionar_cliente(self):
+        print("======================================")
+        print("----------|Adicionar Cliente|---------")
+        print("======================================")
+        print("--------------------------------------")
+        cpf = input("CPF do cliente: ")
+        nome = input("Nome do cliente: ")
+        email = input("Email do cliente: ")
+        endereco = input("Endereço do cliente: ")
+        adicionar_cliente(cpf, nome, email, endereco)
+    def _remover_cliente(self):
+        print("======================================")
+        print("---------|Remover Funcionário|--------")
+        print("======================================")
+        print("--------------------------------------")
+        print("***\tLista de Clientes\t***")
+        listar_todos_clientes()
+        print("--------------------------------------")
+        nome = input("Nome do cliente a ser deletado: ")
+        remover_cliente(nome)
+
 def main():
     #listar_todos_clientes()
     #listar_todas_filiais()
     #listar_todos_produtos()
     #listar_estoque("Loja1")
-    #listar_funcionarios()
+    #listar_todos_funcionarios()
     #mudar_valor("Boston", 1420)
     #mudar_estoque("Loja1", 25, "Boston")
     #adicionar_produto("Phoenix", "Heval", "Mola", 2, "1,93 x 2,03 m", 3500)
@@ -25,7 +177,10 @@ def main():
     #remover_cliente("Francisco Junior Souza")
     #adicionar_funcionario("58648726818", 'Cleison Pires Leite', 'Vendedor', '1502')
     #remover_funcionario("Cleison Pires Leite")
+    menu = Menu()
+    menu.start()
     pass
+
 
 #Funções de DELETE
 def remover_produto(nome):
@@ -95,7 +250,7 @@ def mudar_estoque(nome_filial, nova_quantidade, nome_produto):
         print("*** Não foi possivel atualizar a quantidade de" + nome_produto +  " em " + nome_filial + " ***")
 
 #Funções de SELECT
-def listar_funcionarios():
+def listar_todos_funcionarios():
     funcionarioDAO = FuncionarioDAO(pg_user, pg_password, pg_port, pg_database)
     funcionarios = funcionarioDAO.lista_todas()
     for f in funcionarios:
