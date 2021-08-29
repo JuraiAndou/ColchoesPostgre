@@ -5,7 +5,7 @@
 -- Dumped from database version 13.3
 -- Dumped by pg_dump version 13.3
 
--- Started on 2021-08-29 00:01:16
+-- Started on 2021-08-29 00:04:39
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
@@ -331,7 +331,7 @@ ALTER TABLE ONLY public.venda_produto
     ADD CONSTRAINT venda_produto_venda_id_fkey FOREIGN KEY (venda_id) REFERENCES public.venda(id) ON UPDATE CASCADE ON DELETE SET NULL;
 
 
--- Completed on 2021-08-29 00:01:16
+-- Completed on 2021-08-29 00:04:40
 
 --
 -- PostgreSQL database dump complete
