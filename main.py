@@ -17,6 +17,7 @@ def main():
     listar_estoque("Loja1")
     listar_funcionarios()
     mudar_valor("Boston", 1420)
+    mudar_estoque("Loja1", 25, "Boston")
 
 
 #Funções update
@@ -28,13 +29,13 @@ def mudar_valor(nome_produto, novo_valor):
     else:
         print("*** Não foi possivel atualizar o preço de " + nome_produto + " ***")
 
-def mudar_estoque(nome_filial, nova_quantidade):
-    produtoDAO = ProdutoDAO(pg_user, pg_password, pg_port, pg_database)
-    sucesso = produtoDAO.atualizar_valor(nome_filial, nova_quantidade)
+def mudar_estoque(nome_filial, nova_quantidade, nome_produto):
+    filialDAO = FilialDAO(pg_user, pg_password, pg_port, pg_database)
+    sucesso = filialDAO.atualizar_estoque(nome_filial, nova_quantidade, nome_produto)
     if sucesso:
-        print("*** Quantidade atualizada com sucesso ***")
+        print("*** Quantidade de " + nome_produto + " atualizada em " + nome_filial + " com sucesso ***")
     else:
-        print("*** Não foi possivel atualizar a quantidade de " + nome_filial + " ***")
+        print("*** Não foi possivel atualizar a quantidade de" + nome_produto +  " em " + nome_filial + " ***")
 
 #Funções de Select
 def listar_funcionarios():
