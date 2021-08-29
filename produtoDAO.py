@@ -34,3 +34,18 @@ class ProdutoDAO(object):
                 cursor.close()
                 connection.close()
         return resultados
+    def atualizar_valor(self, nome_produto, novo_valor):
+        sucesso = False
+        try:
+            connection = psycopg2.connect(user=self._usr, password=self._psw, port=self._port, database=self._db)
+            cursor = connection.cursor()
+            cursor.execute("UPDATE produto SET valor = " + str(novo_valor) + " WHERE produto.nome = \'" + nome_produto + "\'")
+            connection.commit()
+            sucesso = (cursor.rowcount == 1)
+        except (Exception, psycopg2.Error) as error:
+            traceback.print_exc()
+        finally:
+            if connection:
+                cursor.close()
+                connection.close()
+        return sucesso
