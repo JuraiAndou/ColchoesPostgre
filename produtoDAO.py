@@ -65,3 +65,19 @@ class ProdutoDAO(object):
                 cursor.close()
                 connection.close()
         return sucesso
+    
+    def remover(self, nome):
+        sucesso = False
+        try:
+            connection = psycopg2.connect(user=self._usr, password=self._psw, port=self._port, database=self._db)
+            cursor = connection.cursor()
+            cursor.execute("DELETE FROM produto WHERE produto.nome = \'" + nome + "\'")
+            connection.commit()
+            sucesso = (cursor.rowcount == 1)
+        except (Exception, psycopg2.Error) as error:
+            traceback.print_exc()
+        finally:
+            if connection:
+                cursor.close()
+                connection.close()
+        return sucesso

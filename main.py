@@ -20,9 +20,19 @@ def main():
     #mudar_valor("Boston", 1420)
     #mudar_estoque("Loja1", 25, "Boston")
     #adicionar_produto("Phoenix", "Heval", "Mola", 2, "1,93 x 2,03 m", 3500)
+    remover_produto("Phoenix")
     pass
 
-#Funções de insert
+#Funções de DELETE
+def remover_produto(nome):
+    produtoDAO = ProdutoDAO(pg_user, pg_password, pg_port, pg_database)
+    sucesso = produtoDAO.remover(nome)
+    if sucesso:
+        print("*** " + nome + " removido com sucesso ***")
+    else:
+        print("*** Não foi possivel remover" + nome + " ***")
+
+#Funções de INSERT
 def adicionar_produto(nome, marca, descricao, fornecedor, medida, valor):
     produtoDAO = ProdutoDAO(pg_user, pg_password, pg_port, pg_database)
     sucesso = produtoDAO.inserir(nome, marca, descricao, fornecedor, medida, valor)
@@ -31,7 +41,7 @@ def adicionar_produto(nome, marca, descricao, fornecedor, medida, valor):
     else:
         print("*** Não foi possivel inserir" + nome + " ***")
 
-#Funções update
+#Funções UPDATE
 def mudar_valor(nome_produto, novo_valor):
     produtoDAO = ProdutoDAO(pg_user, pg_password, pg_port, pg_database)
     sucesso = produtoDAO.atualizar_valor(nome_produto, novo_valor)
@@ -48,7 +58,7 @@ def mudar_estoque(nome_filial, nova_quantidade, nome_produto):
     else:
         print("*** Não foi possivel atualizar a quantidade de" + nome_produto +  " em " + nome_filial + " ***")
 
-#Funções de Select
+#Funções de SELECT
 def listar_funcionarios():
     funcionarioDAO = FuncionarioDAO(pg_user, pg_password, pg_port, pg_database)
     funcionarios = funcionarioDAO.lista_todas()
