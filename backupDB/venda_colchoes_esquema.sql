@@ -6,7 +6,11 @@
 -- Dumped by pg_dump version 13.3
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 -- Started on 2021-08-29 00:04:39
+=======
+-- Started on 2021-08-28 23:39:24
+>>>>>>> parent of 61d621e (Revert "att")
 =======
 -- Started on 2021-08-28 23:39:24
 >>>>>>> parent of 61d621e (Revert "att")
@@ -28,7 +32,11 @@ SET default_table_access_method = heap;
 
 --
 <<<<<<< HEAD
+<<<<<<< HEAD
 -- TOC entry 200 (class 1259 OID 17088)
+=======
+-- TOC entry 200 (class 1259 OID 16956)
+>>>>>>> parent of 61d621e (Revert "att")
 =======
 -- TOC entry 200 (class 1259 OID 16956)
 >>>>>>> parent of 61d621e (Revert "att")
@@ -47,7 +55,11 @@ ALTER TABLE public.cliente OWNER TO postgres;
 
 --
 <<<<<<< HEAD
+<<<<<<< HEAD
 -- TOC entry 201 (class 1259 OID 17094)
+=======
+-- TOC entry 201 (class 1259 OID 16962)
+>>>>>>> parent of 61d621e (Revert "att")
 =======
 -- TOC entry 201 (class 1259 OID 16962)
 >>>>>>> parent of 61d621e (Revert "att")
@@ -65,7 +77,11 @@ ALTER TABLE public.estoque OWNER TO postgres;
 
 --
 <<<<<<< HEAD
+<<<<<<< HEAD
 -- TOC entry 202 (class 1259 OID 17097)
+=======
+-- TOC entry 202 (class 1259 OID 16965)
+>>>>>>> parent of 61d621e (Revert "att")
 =======
 -- TOC entry 202 (class 1259 OID 16965)
 >>>>>>> parent of 61d621e (Revert "att")
@@ -84,7 +100,11 @@ ALTER TABLE public.filiais OWNER TO postgres;
 
 --
 <<<<<<< HEAD
+<<<<<<< HEAD
 -- TOC entry 203 (class 1259 OID 17103)
+=======
+-- TOC entry 203 (class 1259 OID 16971)
+>>>>>>> parent of 61d621e (Revert "att")
 =======
 -- TOC entry 203 (class 1259 OID 16971)
 >>>>>>> parent of 61d621e (Revert "att")
@@ -103,7 +123,11 @@ ALTER TABLE public.fornece OWNER TO postgres;
 
 --
 <<<<<<< HEAD
+<<<<<<< HEAD
 -- TOC entry 204 (class 1259 OID 17109)
+=======
+-- TOC entry 204 (class 1259 OID 16977)
+>>>>>>> parent of 61d621e (Revert "att")
 =======
 -- TOC entry 204 (class 1259 OID 16977)
 >>>>>>> parent of 61d621e (Revert "att")
@@ -123,7 +147,11 @@ ALTER TABLE public.fornecedor OWNER TO postgres;
 
 --
 <<<<<<< HEAD
+<<<<<<< HEAD
 -- TOC entry 205 (class 1259 OID 17115)
+=======
+-- TOC entry 205 (class 1259 OID 16983)
+>>>>>>> parent of 61d621e (Revert "att")
 =======
 -- TOC entry 205 (class 1259 OID 16983)
 >>>>>>> parent of 61d621e (Revert "att")
@@ -142,7 +170,11 @@ ALTER TABLE public.funcionario OWNER TO postgres;
 
 --
 <<<<<<< HEAD
+<<<<<<< HEAD
 -- TOC entry 206 (class 1259 OID 17121)
+=======
+-- TOC entry 206 (class 1259 OID 16989)
+>>>>>>> parent of 61d621e (Revert "att")
 =======
 -- TOC entry 206 (class 1259 OID 16989)
 >>>>>>> parent of 61d621e (Revert "att")
@@ -164,7 +196,11 @@ ALTER TABLE public.produto OWNER TO postgres;
 
 --
 <<<<<<< HEAD
+<<<<<<< HEAD
 -- TOC entry 207 (class 1259 OID 17127)
+=======
+-- TOC entry 207 (class 1259 OID 16995)
+>>>>>>> parent of 61d621e (Revert "att")
 =======
 -- TOC entry 207 (class 1259 OID 16995)
 >>>>>>> parent of 61d621e (Revert "att")
@@ -184,7 +220,11 @@ ALTER TABLE public.venda OWNER TO postgres;
 
 --
 <<<<<<< HEAD
+<<<<<<< HEAD
 -- TOC entry 208 (class 1259 OID 17133)
+=======
+-- TOC entry 208 (class 1259 OID 17001)
+>>>>>>> parent of 61d621e (Revert "att")
 =======
 -- TOC entry 208 (class 1259 OID 17001)
 >>>>>>> parent of 61d621e (Revert "att")
@@ -202,7 +242,11 @@ ALTER TABLE public.venda_produto OWNER TO postgres;
 
 --
 <<<<<<< HEAD
+<<<<<<< HEAD
 -- TOC entry 2900 (class 2606 OID 17137)
+=======
+-- TOC entry 2900 (class 2606 OID 17005)
+>>>>>>> parent of 61d621e (Revert "att")
 =======
 -- TOC entry 2900 (class 2606 OID 17005)
 >>>>>>> parent of 61d621e (Revert "att")
@@ -215,7 +259,11 @@ ALTER TABLE ONLY public.produto
 
 --
 <<<<<<< HEAD
+<<<<<<< HEAD
 -- TOC entry 2888 (class 2606 OID 17139)
+=======
+-- TOC entry 2888 (class 2606 OID 17007)
+>>>>>>> parent of 61d621e (Revert "att")
 =======
 -- TOC entry 2888 (class 2606 OID 17007)
 >>>>>>> parent of 61d621e (Revert "att")
@@ -228,7 +276,11 @@ ALTER TABLE ONLY public.cliente
 
 --
 <<<<<<< HEAD
+<<<<<<< HEAD
 -- TOC entry 2890 (class 2606 OID 17141)
+=======
+-- TOC entry 2890 (class 2606 OID 17009)
+>>>>>>> parent of 61d621e (Revert "att")
 =======
 -- TOC entry 2890 (class 2606 OID 17009)
 >>>>>>> parent of 61d621e (Revert "att")
@@ -241,7 +293,11 @@ ALTER TABLE ONLY public.estoque
 
 --
 <<<<<<< HEAD
+<<<<<<< HEAD
 -- TOC entry 2892 (class 2606 OID 17143)
+=======
+-- TOC entry 2892 (class 2606 OID 17011)
+>>>>>>> parent of 61d621e (Revert "att")
 =======
 -- TOC entry 2892 (class 2606 OID 17011)
 >>>>>>> parent of 61d621e (Revert "att")
@@ -254,7 +310,11 @@ ALTER TABLE ONLY public.filiais
 
 --
 <<<<<<< HEAD
+<<<<<<< HEAD
 -- TOC entry 2894 (class 2606 OID 17145)
+=======
+-- TOC entry 2894 (class 2606 OID 17013)
+>>>>>>> parent of 61d621e (Revert "att")
 =======
 -- TOC entry 2894 (class 2606 OID 17013)
 >>>>>>> parent of 61d621e (Revert "att")
@@ -267,7 +327,11 @@ ALTER TABLE ONLY public.fornece
 
 --
 <<<<<<< HEAD
+<<<<<<< HEAD
 -- TOC entry 2896 (class 2606 OID 17147)
+=======
+-- TOC entry 2896 (class 2606 OID 17015)
+>>>>>>> parent of 61d621e (Revert "att")
 =======
 -- TOC entry 2896 (class 2606 OID 17015)
 >>>>>>> parent of 61d621e (Revert "att")
@@ -280,7 +344,11 @@ ALTER TABLE ONLY public.fornecedor
 
 --
 <<<<<<< HEAD
+<<<<<<< HEAD
 -- TOC entry 2898 (class 2606 OID 17149)
+=======
+-- TOC entry 2898 (class 2606 OID 17017)
+>>>>>>> parent of 61d621e (Revert "att")
 =======
 -- TOC entry 2898 (class 2606 OID 17017)
 >>>>>>> parent of 61d621e (Revert "att")
@@ -293,7 +361,11 @@ ALTER TABLE ONLY public.funcionario
 
 --
 <<<<<<< HEAD
+<<<<<<< HEAD
 -- TOC entry 2902 (class 2606 OID 17151)
+=======
+-- TOC entry 2902 (class 2606 OID 17019)
+>>>>>>> parent of 61d621e (Revert "att")
 =======
 -- TOC entry 2902 (class 2606 OID 17019)
 >>>>>>> parent of 61d621e (Revert "att")
@@ -306,7 +378,11 @@ ALTER TABLE ONLY public.venda
 
 --
 <<<<<<< HEAD
+<<<<<<< HEAD
 -- TOC entry 2904 (class 2606 OID 17153)
+=======
+-- TOC entry 2904 (class 2606 OID 17021)
+>>>>>>> parent of 61d621e (Revert "att")
 =======
 -- TOC entry 2904 (class 2606 OID 17021)
 >>>>>>> parent of 61d621e (Revert "att")
@@ -319,7 +395,11 @@ ALTER TABLE ONLY public.venda_produto
 
 --
 <<<<<<< HEAD
+<<<<<<< HEAD
 -- TOC entry 2905 (class 2606 OID 17154)
+=======
+-- TOC entry 2905 (class 2606 OID 17022)
+>>>>>>> parent of 61d621e (Revert "att")
 =======
 -- TOC entry 2905 (class 2606 OID 17022)
 >>>>>>> parent of 61d621e (Revert "att")
@@ -332,7 +412,11 @@ ALTER TABLE ONLY public.estoque
 
 --
 <<<<<<< HEAD
+<<<<<<< HEAD
 -- TOC entry 2906 (class 2606 OID 17159)
+=======
+-- TOC entry 2906 (class 2606 OID 17027)
+>>>>>>> parent of 61d621e (Revert "att")
 =======
 -- TOC entry 2906 (class 2606 OID 17027)
 >>>>>>> parent of 61d621e (Revert "att")
@@ -345,7 +429,11 @@ ALTER TABLE ONLY public.estoque
 
 --
 <<<<<<< HEAD
+<<<<<<< HEAD
 -- TOC entry 2907 (class 2606 OID 17164)
+=======
+-- TOC entry 2907 (class 2606 OID 17032)
+>>>>>>> parent of 61d621e (Revert "att")
 =======
 -- TOC entry 2907 (class 2606 OID 17032)
 >>>>>>> parent of 61d621e (Revert "att")
@@ -358,7 +446,11 @@ ALTER TABLE ONLY public.fornece
 
 --
 <<<<<<< HEAD
+<<<<<<< HEAD
 -- TOC entry 2908 (class 2606 OID 17169)
+=======
+-- TOC entry 2908 (class 2606 OID 17037)
+>>>>>>> parent of 61d621e (Revert "att")
 =======
 -- TOC entry 2908 (class 2606 OID 17037)
 >>>>>>> parent of 61d621e (Revert "att")
@@ -371,7 +463,11 @@ ALTER TABLE ONLY public.fornece
 
 --
 <<<<<<< HEAD
+<<<<<<< HEAD
 -- TOC entry 2909 (class 2606 OID 17174)
+=======
+-- TOC entry 2909 (class 2606 OID 17042)
+>>>>>>> parent of 61d621e (Revert "att")
 =======
 -- TOC entry 2909 (class 2606 OID 17042)
 >>>>>>> parent of 61d621e (Revert "att")
@@ -384,7 +480,11 @@ ALTER TABLE ONLY public.produto
 
 --
 <<<<<<< HEAD
+<<<<<<< HEAD
 -- TOC entry 2910 (class 2606 OID 17179)
+=======
+-- TOC entry 2910 (class 2606 OID 17047)
+>>>>>>> parent of 61d621e (Revert "att")
 =======
 -- TOC entry 2910 (class 2606 OID 17047)
 >>>>>>> parent of 61d621e (Revert "att")
@@ -397,7 +497,11 @@ ALTER TABLE ONLY public.venda
 
 --
 <<<<<<< HEAD
+<<<<<<< HEAD
 -- TOC entry 2911 (class 2606 OID 17184)
+=======
+-- TOC entry 2911 (class 2606 OID 17052)
+>>>>>>> parent of 61d621e (Revert "att")
 =======
 -- TOC entry 2911 (class 2606 OID 17052)
 >>>>>>> parent of 61d621e (Revert "att")
@@ -410,7 +514,11 @@ ALTER TABLE ONLY public.venda
 
 --
 <<<<<<< HEAD
+<<<<<<< HEAD
 -- TOC entry 2912 (class 2606 OID 17189)
+=======
+-- TOC entry 2912 (class 2606 OID 17057)
+>>>>>>> parent of 61d621e (Revert "att")
 =======
 -- TOC entry 2912 (class 2606 OID 17057)
 >>>>>>> parent of 61d621e (Revert "att")
@@ -423,7 +531,11 @@ ALTER TABLE ONLY public.venda
 
 --
 <<<<<<< HEAD
+<<<<<<< HEAD
 -- TOC entry 2914 (class 2606 OID 17204)
+=======
+-- TOC entry 2914 (class 2606 OID 17072)
+>>>>>>> parent of 61d621e (Revert "att")
 =======
 -- TOC entry 2914 (class 2606 OID 17072)
 >>>>>>> parent of 61d621e (Revert "att")
@@ -432,11 +544,19 @@ ALTER TABLE ONLY public.venda
 
 ALTER TABLE ONLY public.venda_produto
 <<<<<<< HEAD
+<<<<<<< HEAD
     ADD CONSTRAINT venda_produto_produto_id_fkey FOREIGN KEY (produto_id) REFERENCES public.produto(id) ON UPDATE CASCADE ON DELETE CASCADE NOT VALID;
 
 
 --
 -- TOC entry 2913 (class 2606 OID 17199)
+=======
+    ADD CONSTRAINT venda_produto_produto_id_fkey FOREIGN KEY (produto_id) REFERENCES public.produto(id) ON UPDATE CASCADE NOT VALID;
+
+
+--
+-- TOC entry 2913 (class 2606 OID 17067)
+>>>>>>> parent of 61d621e (Revert "att")
 =======
     ADD CONSTRAINT venda_produto_produto_id_fkey FOREIGN KEY (produto_id) REFERENCES public.produto(id) ON UPDATE CASCADE NOT VALID;
 
@@ -452,7 +572,11 @@ ALTER TABLE ONLY public.venda_produto
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 -- Completed on 2021-08-29 00:04:40
+=======
+-- Completed on 2021-08-28 23:39:24
+>>>>>>> parent of 61d621e (Revert "att")
 =======
 -- Completed on 2021-08-28 23:39:24
 >>>>>>> parent of 61d621e (Revert "att")
