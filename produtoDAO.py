@@ -50,12 +50,12 @@ class ProdutoDAO(object):
                 connection.close()
         return sucesso
     
-    def inserir():
+    def inserir(self, nome, marca, descricao, fornecedor, medida, valor):
         sucesso = False
         try:
-            connection = psycopg2.connect(user="postgres", password="ufc123", host="localhost", port="5432", database="cadastro")
+            connection = psycopg2.connect(user=self._usr, password=self._psw, port=self._port, database=self._db)
             cursor = connection.cursor()
-            cursor.execute("INSERT INTO produto  VALUES (8, 'Phoenix', 'Herval', 'Mola', 2,'1,93 x 2,03 m', 3500)")
+            cursor.execute("INSERT INTO produto(nome, marca, descricao, fornecedor_id, medida, valor) VALUES (\'" + nome + "\', \'" + marca + "\', \'" + descricao + "\', " + str(fornecedor) + ",\'" + medida + "\', " + str(valor) + ")")
             connection.commit()
             sucesso = (cursor.rowcount == 1)
         except (Exception, psycopg2.Error) as error:

@@ -1,3 +1,4 @@
+from produto import Produto
 from clienteDAO import ClienteDAO
 from filialDAO import FilialDAO
 from produtoDAO import ProdutoDAO
@@ -11,23 +12,33 @@ pg_port="5432" #porta do servidor
 pg_database = "venda_colchoes" #nome do banco de dados
 
 def main():
-    listar_todos_clientes()
-    listar_todas_filiais()
-    listar_todos_produtos()
-    listar_estoque("Loja1")
-    listar_funcionarios()
-    mudar_valor("Boston", 1420)
-    mudar_estoque("Loja1", 25, "Boston")
+    #listar_todos_clientes()
+    #listar_todas_filiais()
+    #listar_todos_produtos()
+    #listar_estoque("Loja1")
+    #listar_funcionarios()
+    #mudar_valor("Boston", 1420)
+    #mudar_estoque("Loja1", 25, "Boston")
+    #adicionar_produto("Phoenix", "Heval", "Mola", 2, "1,93 x 2,03 m", 3500)
+    pass
 
+#Funções de insert
+def adicionar_produto(nome, marca, descricao, fornecedor, medida, valor):
+    produtoDAO = ProdutoDAO(pg_user, pg_password, pg_port, pg_database)
+    sucesso = produtoDAO.inserir(nome, marca, descricao, fornecedor, medida, valor)
+    if sucesso:
+        print("*** " + nome + " inserido com sucesso ***")
+    else:
+        print("*** Não foi possivel inserir" + nome + " ***")
 
 #Funções update
 def mudar_valor(nome_produto, novo_valor):
     produtoDAO = ProdutoDAO(pg_user, pg_password, pg_port, pg_database)
     sucesso = produtoDAO.atualizar_valor(nome_produto, novo_valor)
     if sucesso:
-        print("*** Preço atualizado com sucesso ***")
+        print("*** Preço de " + nome_produto + " atualizado com sucesso ***")
     else:
-        print("*** Não foi possivel atualizar o preço de " + nome_produto + " ***")
+        print("*** Não foi possivel atualizar o preço de " + nome_produto + "  ***")
 
 def mudar_estoque(nome_filial, nova_quantidade, nome_produto):
     filialDAO = FilialDAO(pg_user, pg_password, pg_port, pg_database)
