@@ -32,7 +32,7 @@ class Menu():
         print("[0]\tSair da Aplicação")
         print("--------------------------------------")
 
-        cmd = int(input("Digite uma opção [0-3]: "))
+        cmd = int(input("Digite uma opção [0-4]: "))
         if cmd == 0:
             exit()
         elif cmd == 1:
@@ -40,7 +40,7 @@ class Menu():
         elif cmd == 2:
             self.cadastro_clientes()
         elif cmd == 3:
-            pass
+            self.cadastro_produtos()
         elif cmd == 4:
             pass
         else:
@@ -105,7 +105,7 @@ class Menu():
         nome = input("Nome do funcionário a ser deletado: ")
         remover_funcionario(nome)
     
-    #Cadastro de Clientes
+    #Cadastro de clientes
     def cadastro_clientes(self):
         print("======================================")
         print("---------|Cadastro de Clientes|-------")
@@ -162,6 +162,97 @@ class Menu():
         print("--------------------------------------")
         nome = input("Nome do cliente a ser deletado: ")
         remover_cliente(nome)
+
+    #Cadastro de produtos
+    def cadastro_produtos(self):
+        print("======================================")
+        print("----------|Cadastro Produtos|---------")
+        print("======================================")
+        print("--------------------------------------")
+        print("[1]\tListar Produtos")
+        print("--------------------------------------")
+        print("[2]\tAdicionar Produto")
+        print("--------------------------------------")
+        print("[3]\tRemover Produto")
+        print("--------------------------------------")
+        print("[4]\tAtualizar Valor")
+        print("--------------------------------------")
+        print("[5]\tVoltar")
+        print("--------------------------------------")
+        print("[0]\tSair da Aplicação")
+        print("--------------------------------------")
+
+        cmd = int(input("Digite uma opção [0-5]: "))
+        if cmd == 0:
+            exit()
+        elif cmd == 1:
+            listar_todos_produtos()
+            input("Presione Enter para sair...")
+            exit()
+        elif cmd == 2:
+            self._adicionar_produto()
+            input("Presione Enter para sair...")
+            exit()
+        elif cmd == 3:
+            self._remover_produto()
+            input("Presione Enter para sair...")
+            exit()
+        elif cmd == 4:
+            self._atualizar_preco()
+        elif cmd == 5:
+            self.start()
+        else:
+            print("\n\n\n***\tComanado inválido\t***\n")
+            self.cadastro_produtos()
+    def _adicionar_produto(self):
+        print("======================================")
+        print("---------|Adicionar Produto|----------")
+        print("======================================")
+        print("--------------------------------------")
+        nome = input("Nome do produto: ")
+        marca = input("Marca do prduto: ")
+        descricao = input("Descrição do produto: ")
+        fornecedor = self._check_fornecedor()
+        medida = input("Medidas do produto: ")
+        valor = int(input("Valor do produto: "))
+        adicionar_produto(nome, marca, descricao, fornecedor, medida, valor)
+    def _check_fornecedor(self):
+        print("======================================")
+        print("---------|Qual o fornecedor?|---------")
+        print("======================================")
+        print("--------------------------------------")
+        print("[1]\tOrtobom")
+        print("--------------------------------------")
+        print("[2]\tHerval")
+        print("--------------------------------------")
+        print("[3]\tSimmons")
+        cmd = int(input("Digite uma opção [1-3]"))
+        if cmd == 1 or cmd == 2 or cmd == 3:
+            return cmd
+        else:
+            print("*** Comando invalido ***")
+            exit()
+    def _remover_produto(self):
+        print("======================================")
+        print("----------|Remover Produto|-----------")
+        print("======================================")
+        print("--------------------------------------")
+        print("***\tLista de Produtos\t***")
+        listar_todos_produtos()
+        print("--------------------------------------")
+        nome = input("Nome do produto a ser removido: ")
+        remover_produto(nome)
+    def _atualizar_preco(self):
+        print("======================================")
+        print("-----------|Atualizar Preço|----------")
+        print("======================================")
+        print("--------------------------------------")
+        print("***\tLista de Produtos\t***")
+        listar_todos_produtos()
+        print("--------------------------------------")
+        nome = input("Nome do produto a atualizar: ")
+        valor = int(input("Novo valor: "))
+        mudar_valor(nome, valor)
 
 def main():
     #listar_todos_clientes()
