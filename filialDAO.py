@@ -60,7 +60,7 @@ class FilialDAO(object):
             cursor = connection.cursor()
             cursor.execute("UPDATE estoque SET quantidade = " + str(nova_quantidade) + " WHERE produto_id IN (SELECT produto_id FROM estoque AS e, filiais AS f WHERE f.id = e.filial_id AND f.nome = \'"+ nome_filial + "\' AND produto_id in(SELECT produto.id FROM produto WHERE produto.nome = \'" + nome_produto + "\'))")
             connection.commit()
-            sucesso = (cursor.rowcount == 2)
+            sucesso = (cursor.rowcount == 1)
         except (Exception, psycopg2.Error) as error:
             traceback.print_exc()
         finally:

@@ -388,7 +388,7 @@ def mudar_estoque(nome_filial, nova_quantidade, nome_produto):
     if sucesso:
         print("*** Quantidade de " + nome_produto + " atualizada em " + nome_filial + " com sucesso ***")
     else:
-        print("*** Não foi possivel atualizar a quantidade de" + nome_produto +  " em " + nome_filial + " ***")
+        print("*** Não foi possivel atualizar a quantidade de " + nome_produto +  " em " + nome_filial + " ***")
 
 #Funções de SELECT
 def listar_todos_funcionarios():
