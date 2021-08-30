@@ -42,7 +42,7 @@ class Menu():
         elif cmd == 3:
             self.cadastro_produtos()
         elif cmd == 4:
-            pass
+            self.cadastro_filiais()
         else:
             print("\n\n\n***\tComanado inválido\t***\n")
             self.start()
@@ -210,7 +210,7 @@ class Menu():
         print("======================================")
         print("--------------------------------------")
         nome = input("Nome do produto: ")
-        marca = input("Marca do prduto: ")
+        marca = input("Marca do produto: ")
         descricao = input("Descrição do produto: ")
         fornecedor = self._check_fornecedor()
         medida = input("Medidas do produto: ")
@@ -226,7 +226,7 @@ class Menu():
         print("[2]\tHerval")
         print("--------------------------------------")
         print("[3]\tSimmons")
-        cmd = int(input("Digite uma opção [1-3]"))
+        cmd = int(input("Digite uma opção [1-3]: "))
         if cmd == 1 or cmd == 2 or cmd == 3:
             return cmd
         else:
@@ -253,6 +253,69 @@ class Menu():
         nome = input("Nome do produto a atualizar: ")
         valor = int(input("Novo valor: "))
         mudar_valor(nome, valor)
+
+    #Cadastro de filiáis
+    def cadastro_filiais(self):
+        print("======================================")
+        print("----------|Cadastro Filiáis|---------")
+        print("======================================")
+        print("--------------------------------------")
+        print("[1]\tListar Filiais")
+        print("--------------------------------------")
+        print("[2]\tListar Estoque")
+        print("--------------------------------------")
+        print("[3]\tAtualizar quantidade em estoque")
+        print("--------------------------------------")
+        print("[4]\tVoltar")
+        print("--------------------------------------")
+        print("[0]\tSair da Aplicação")
+        print("--------------------------------------")
+
+        cmd = int(input("Digite uma opção [0-4]: "))
+        if cmd == 0:
+            exit()
+        elif cmd == 1:
+            listar_todas_filiais()
+            input("Presione Enter para sair...")
+            exit()
+        elif cmd == 2:
+            self._listar_estoque()
+            input("Presione Enter para sair...")
+            exit()
+        elif cmd == 3:
+            self._atualizar_quantidade()
+            input("Presione Enter para sair...")
+            exit()
+        elif cmd == 4:
+            self.start()
+        else:
+            print("\n\n\n***\tComanado inválido\t***\n")
+            self.cadastro_produtos()
+    def _listar_estoque(self):
+        print("======================================")
+        print("-----------|Listar Estoque|-----------")
+        print("======================================")
+        print("--------------------------------------")
+        print("***\tLista de Filiais\t***")
+        listar_todas_filiais()
+        print("--------------------------------------")
+        nome = input("Nome da filial: ")
+        listar_estoque(nome)
+    def _atualizar_quantidade(self):
+        print("======================================")
+        print("--------|Atualizar Quantidade|--------")
+        print("======================================")
+        print("--------------------------------------")
+        print("***\tLista de Filiais\t***")
+        listar_todas_filiais()
+        print("--------------------------------------")
+        nome = input("Nome da filial: ")
+        print("***\tLista de Filiais\t***")
+        listar_estoque(nome)
+        print("--------------------------------------")
+        produto = input("Nome do produto: ")
+        quantidade = int(input("Quantidade: "))
+        mudar_estoque(nome, quantidade, produto)
 
 def main():
     #listar_todos_clientes()
