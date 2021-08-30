@@ -318,19 +318,6 @@ class Menu():
         mudar_estoque(nome, quantidade, produto)
 
 def main():
-    #listar_todos_clientes()
-    #listar_todas_filiais()
-    #listar_todos_produtos()
-    #listar_estoque("Loja1")
-    #listar_todos_funcionarios()
-    #mudar_valor("Boston", 1420)
-    #mudar_estoque("Loja1", 25, "Boston")
-    #adicionar_produto("Phoenix", "Heval", "Mola", 2, "1,93 x 2,03 m", 3500)
-    #remover_produto("Phoenix")
-    #adicionar_cliente("05304506818", "Francisco Junior Souza", "juninreidelas@gmail.com", "631-1 Tapera")
-    #remover_cliente("Francisco Junior Souza")
-    #adicionar_funcionario("58648726818", 'Cleison Pires Leite', 'Vendedor', '1502')
-    #remover_funcionario("Cleison Pires Leite")
     menu = Menu()
     menu.start()
     pass
